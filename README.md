@@ -1,2 +1,11 @@
-# frappe-flask-test
-https://frappe.io/flask-test
+## Screen shots
+
+### Product
+
+![screenshots](products.png)
+![screenshots](add-product.png)
+
+### Location
+![screenshots](locations.png)
+![screenshots](add-location.png)
+![screenshots](edit-location.png)
