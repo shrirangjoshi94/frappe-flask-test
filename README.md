@@ -3,7 +3,7 @@
 ### Product
 
 ![Products](/screenshots/products.png)
-![Add_Product]((/screenshots/add-product.png)
+![Add_Product](/screenshots/add-product.png)
 
 ### Location
 ![Locations](/screenshots/locations.png)

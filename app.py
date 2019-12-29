@@ -5,9 +5,9 @@ from datetime import datetime
 app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'shrirangj'
-app.config['MYSQL_PASSWORD'] = 'asdfghjkl'
-app.config['MYSQL_DB'] = 'frappe_test_laravel'
+app.config['MYSQL_USER'] = 'user_name'
+app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_DB'] = 'frappe_test_flask'
 
 mysql = MySQL(app)
 
