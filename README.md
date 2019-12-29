@@ -2,10 +2,10 @@
 
 ### Product
 
-![screenshots](products.png)
-![screenshots](add-product.png)
+![Products](/screenshots/products.png)
+![Add_Product]((/screenshots/add-product.png)
 
 ### Location
-![screenshots](locations.png)
-![screenshots](add-location.png)
-![screenshots](edit-location.png)
+![Locations](/screenshots/locations.png)
+![Add_Location](/screenshots/add-location.png)
+![Edit_Location](/screenshots/edit-location.png)
