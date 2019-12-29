@@ -1,0 +1,35 @@
+{% extends "base_template.html" %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Locations
+                    <div><a href="/location/create">Add New Location</a></div>
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                        {% for location in locations %}
+                        <tr>
+                            <td>{{ location[1] }}</td>
+                            <td>{{ location[2] }}</td>
+                            <td>
+                                <a href="/location/edit/{{location[0]}}"><button class="btn btn-primary">Edit</button></a>
+                               |
+                               <a href="/location/delete/{{location[0] }}"><button class="btn btn-danger">Delete</button></a>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

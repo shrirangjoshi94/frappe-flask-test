@@ -1,0 +1,35 @@
+{% extends "base_template.html" %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Products
+                    <div><a href="/product/create">Add New Product</a></div>
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                        {% for product in products %}
+                        <tr>
+                            <td>{{ product[1] }}</td>
+                            <td>{{ product[2] }}</td>
+                            <td>
+                                <a href="/product/edit/{{product[0]}}"><button class="btn btn-primary">Edit</button></a>
+                               |
+                               <a href="/product/delete/{{product[0] }}"><button class="btn btn-danger">Delete</button></a>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
